@@ -1,10 +1,9 @@
-package Java;
-
+package interview;
 import java.util.Scanner;
 
 public class PrimeOrNot 
 {
-    void checkPrime1(int n)
+	void checkPrime1(int n)
 	{
 		int count=0;
 		for(int i=1;i<=n;i++)
@@ -50,11 +49,19 @@ public class PrimeOrNot
 		return "Prime";
 	}
 	public static void main(String[] args) 
-    {
-       Scanner sc=new Scanner(System.in);
-       System.out.println("Enter Number");
-       int num=sc.nextInt();
-        new PrimeOrNot().checkPrime3(num);
-        sc.close();
-    }    
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int num=sc.nextInt();
+		
+		PrimeOrNot obj=new PrimeOrNot();
+		obj.checkPrime1(num);
+		System.out.println("-----------");
+		obj.checkPrime2(num);
+		System.out.println("-----------");
+		String res=obj.checkPrime3(num);
+		System.out.println(res);
+		sc.close();
+		
+	}
 }
