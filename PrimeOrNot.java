@@ -54,7 +54,7 @@ public class PrimeOrNot
        Scanner sc=new Scanner(System.in);
        System.out.println("Enter Number");
        int num=sc.nextInt();
-        new PrimeOrNot().checkPrime1(num);
+        new PrimeOrNot().checkPrime3(num);
         sc.close();
     }    
 }
