@@ -1,8 +1,10 @@
-package practice;
+package Java;
+
 
 public class Unique 
 {
-	public static void main(String[] args) 
+   
+    public static void main(String[] args) 
 	{
 		int []arr= {5,0,1,0,3,5,3,2,2};
 		int size=arr.length;
@@ -22,9 +24,10 @@ public class Unique
 			}
 			if(flag==true)
 			{
-				System.out.println(arr[i]);
+				System.out.println(arr[i]+" is the Unique Element");
 				return;
 			}
 		}
 	}
+    
 }
